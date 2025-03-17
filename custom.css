@@ -64,7 +64,7 @@ header {
   font-size: 2rem;
   font-weight: 600;
   cursor: pointer;
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
   text-align: left;
   position: relative;
   border-left: 4px solid #ffffff;
@@ -73,7 +73,7 @@ header {
 /* Add + symbol */
 .accordionHeader::after {
   content: "+"; /* Default symbol */
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   font-weight: bold;
   position: absolute;
   right: 15px;
@@ -122,6 +122,10 @@ header {
 /* Change "+" to "-" when opened */
 .accordion-toggle:checked + .accordionHeader::after {
   content: "-";
+  font-size: 2.5rem;
+  font-weight: bold;
+  position: absolute;
+  right: 15px;
 }
 
 /* Uncheck other accordions when one is clicked */
